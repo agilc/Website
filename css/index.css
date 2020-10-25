@@ -1,0 +1,8 @@
+#app-root {
+  height: 100vh;
+}
+
+.sidebar-wrapper {
+  width: 20%;
+  background-color: black;
+}
