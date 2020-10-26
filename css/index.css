@@ -5,6 +5,7 @@
 .sidebar-wrapper {
   width: 20%;
   background-color: black;
+  min-width: 225px;
 }
 
 .profile-icon{
@@ -43,6 +44,7 @@
   position: absolute;
   bottom: 2rem;
   width: inherit;
+  min-width: 225px;
 }
 
 .sidebar-wrapper .nav-link-icons .social-icons{
