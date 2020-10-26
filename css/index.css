@@ -59,3 +59,7 @@
 .sidebar-wrapper .nav-link-icons .social-icons:hover{
   color: #333333;
 }
+
+.main-content-wrapper {
+  width: 100%;
+}
