@@ -10,3 +10,18 @@
 .w-20{
   width: 20%;
 }
+
+.section-headding{
+  justify-content: center;
+  display: flex;
+  font-weight: 600;
+  font-size: xx-large;
+}
+
+.section-headding span{
+  border-bottom: 3px solid #20c997;
+}
+
+section{
+  min-height: 100vh;
+}

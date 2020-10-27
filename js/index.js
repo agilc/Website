@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(event) {
 
-  var app = document.getElementById('root');
+  var app = document.getElementById('running_text');
 
   var typewriter = new Typewriter(app, {
       loop: true

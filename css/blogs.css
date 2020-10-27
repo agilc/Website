@@ -1,0 +1,25 @@
+.blogs-wrapper{
+  padding: 80px;
+}
+
+.blog-posts-list .blog-list-item {
+  margin: 50px;
+}
+
+.blog-posts-list .blog-list-item .blog-title{
+  font-size: large;
+  color: #20c997;
+}
+
+.blog-posts-list .blog-list-item .blog-item-meta{
+  font-size: small;
+  color: #6b6b6b;
+}
+
+.blog-posts-list .blog-list-item .blog-item-meta span{
+  margin-right: 5px;
+}
+
+.blog-posts-list .blog-list-item .blog-item-meta i{
+  margin-right: 3px;
+}

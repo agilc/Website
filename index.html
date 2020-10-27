@@ -25,6 +25,7 @@
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/blogs.css">
 </head>
 
 <body>
@@ -34,10 +35,10 @@
         <img src="public/images/agil.png"/>
       </div>
       <div class="nav-links">
-        <span>Home</span>
-        <span>About Me</span>
-        <span>Blogs</span>
-        <span>Resume</span>
+        <span onclick="window.location='#home'">Home</span>
+        <!--<span onclick="window.location='#about_me'">About Me</span>-->
+        <span onclick="window.location='#blogs'">Blogs</span>
+        <!--<span>Resume</span>-->
         <span>Portfolio</span>
         <span>Contact</span>
       </div>
@@ -53,10 +54,49 @@
     </div>
     <div class="main-content-wrapper">
       <!--Home section -->
-      <section class="home-wrapper">
+      <section id="home" class="home-wrapper">
         <div class="welcome-text">Welcome</div>
-        <div id="root" class="running-text">I am Agil C</div>
+        <div id="running_text" class="running-text">I am Agil C</div>
         <div class="place-text">based in Bangalore, India.</div>
+      </section>
+
+      <!--About Me section -->
+      <section id="blogs" class="blogs-wrapper">
+        <div class="section-headding">
+          <span>Blogs</span>
+        </div>
+        <div class="blog-posts-list">
+          <!--Blog 1-->
+          <div class="blog-list-item">
+            <div class="blog-title">Vertical vs Horizontal Scaling.!</div>
+            <div class="blog-item-meta">
+              <span>Published on Oct 25 2020</span>
+              <span><i class="fa fa-coffee" aria-hidden="true"></i>4 mins read</span>
+            </div>
+            <div class="blog-text-preview">When thinking about system design one of the important points that comes into our mind is Scaling. Basically what is scaling?</div>
+          </div>
+          
+          <!--Blog 2-->
+          <div class="blog-list-item">
+            <div class="blog-title">*args and **kwargs in Python</div>
+            <div class="blog-item-meta">
+              <span>Published on Aug 09 2020</span>
+              <span><i class="fa fa-coffee" aria-hidden="true"></i>4 mins read</span>
+            </div>
+            <div class="blog-text-preview">Sometimes if you check function definition in Python you will see two strange arguments *args and **kwargs, if you have wondered what it…</div>
+          </div>
+
+          <!--Blog 3-->
+          <div class="blog-list-item">
+            <div class="blog-title">Why Python ?</div>
+            <div class="blog-item-meta">
+              <span>Published on Aug 02 2020</span>
+              <span><i class="fa fa-coffee" aria-hidden="true"></i>3 mins read</span>
+            </div>
+            <div class="blog-text-preview">As all of you know Python is one of the most popular programming language today.</div>
+          </div>
+
+        </div>
       </section>
     </div>
   </div>
