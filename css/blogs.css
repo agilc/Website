@@ -11,15 +11,24 @@
   color: #20c997;
 }
 
-.blog-posts-list .blog-list-item .blog-item-meta{
+.blog-item-meta{
   font-size: small;
   color: #6b6b6b;
 }
 
-.blog-posts-list .blog-list-item .blog-item-meta span{
+.blog-item-meta span{
   margin-right: 5px;
 }
 
-.blog-posts-list .blog-list-item .blog-item-meta i{
+.blog-item-meta i{
   margin-right: 3px;
+}
+
+.blog-content-wrapper {
+  padding: 80px;
+}
+
+.blog-content-wrapper h1{
+  width: 100%;
+  color: #20c997;
 }
