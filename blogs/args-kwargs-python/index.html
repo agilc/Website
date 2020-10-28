@@ -1,0 +1,149 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Agil Website</title>
+  <link rel="icon" href="../../public/images/favicon.ico" />
+  <meta name="description" content="">
+  <meta name="keywords" content="Software Engineer, Full Stack Developer, Developer, Engineer, Computer Science, Blog">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/c1bc205599.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script src="js/index.js"></script>
+  <link rel="stylesheet" href="../../css/index.css">
+  <link rel="stylesheet" href="../../css/common.css">
+  <link rel="stylesheet" href="../../css/home.css">
+  <link rel="stylesheet" href="../../css/blogs.css">
+</head>
+
+<body>
+  <div id="app-root" class="d-flex">
+    <div class="sidebar-wrapper">
+      <div class="profile-icon">
+        <img src="../../public/images/agil.png"/>
+      </div>
+      <div class="nav-links">
+        <span onclick="window.location='#home'">Home</span>
+        <!--<span onclick="window.location='#about_me'">About Me</span>-->
+        <span onclick="window.location='#blogs'">Blogs</span>
+        <!--<span>Resume</span>-->
+        <span>Portfolio</span>
+        <span>Contact</span>
+      </div>
+      <div class="nav-link-icons">
+        <div class="justify-center">
+          <a class="social-icons" href="https://www.linkedin.com/in/agilc/" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+          <a class="social-icons" href="https://github.com/agilc" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+          <a class="social-icons" href="https://agilc.medium.com/" target="_blank"><i class="fab fa-medium" aria-hidden="true"></i></a>
+          <a class="social-icons" href="https://angel.co/u/agil-c" target="_blank"><i class="fab fa-angellist" aria-hidden="true"></i></a>
+          <a class="social-icons" href="https://stackoverflow.com/users/5740569/agil-c" target="_blank"><i class="fab fa-stack-overflow" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="blog-content-wrapper">
+      <h1>*args and **kwargs in Python</h1>
+      <div class="blog-item-meta">
+        <span>Published on Aug 09 2020</span>
+        <span><i class="fa fa-coffee" aria-hidden="true"></i>4 mins read</span>
+      </div>
+      <div>
+        <img src="./images/cover.png"/>
+        <p>Sometimes if you check function definition in Python you will see two strange arguments *args and **kwargs, 
+          if you have wondered what it is and want to how it works then this article is for you. In Python we can pass 
+          a variable number of arguments to a function, *args will help to pass multiple arguments, and **kwargs will 
+          allow us to pass keyword arguments to a function.</p>
+
+        <h3 class="heading">*args in Python</h3>
+
+        <img src="./images/code_1.jpeg"/>
+
+        <p>but here is a problem, we need to pass exactly 2 number of arguments to get their product, ie, we can’t use 
+          this function if we need to find the product of more than two numbers. If we need to find the product of 3 
+          numbers we need to modify the function or write a new function specifically for that purpose. But it is not 
+          convenient in the real world, we can’t write n different functions to find the product of all combinations 
+          of n numbers!</p>
+
+        <p>What is the solution to this problem then🤔,</p>
+
+        <p>The most intuitive solution for this will be passing the numbers as a list or set to the function and in the 
+          function iterate the list to get the product of all numbers like the code shown below.</p>
+
+        <img src="./images/code_2.jpeg"/>
+
+        <p>Yes, the list implementation will work but it won't be the most efficient solution because whenever we need 
+          to call the function we need to the argument as a list. This will be tricky when we don’t know the numbers 
+          in advance in that case we need to create the list first then pass it to the function. This is where *args 
+          will be useful.</p>
+
+        <img src="./images/code_3.jpeg"/>
+
+        <p>In the above example, we are passing 4 numbers as positional arguments to mul_nums function. In the function 
+          * in front of args will convert the different arguments of the function to a tuple. We can then iterate the 
+          tuple to find the product of all the numbers similar to passing a list as an argument. But we don’t have to 
+          create a list before passing it to the function instead we can pass all the numbers as positional arguments. 
+          The point to note is args is just a variable name here, we can use whatever name we want, * is doing the job 
+          of converting the positional arguments into a tuple and assigning it to args.</p>
+
+        <h3 class="heading">**kwargs in Python</h3>
+
+        <p>kwargs also work similar to *args, but here we need to pass named or keyword arguments to the function 
+          instead of positional arguments. If we implement the same multiplication function using **kwargs:.</p>
+
+        <img src="./images/code_4.jpeg"/>
+
+        <p>Here the ** operator will convert the named arguments to a Python dictionary and assign it to kwargs. 
+          We can iterate through the values of the dictionary and find the product of numbers. Kwargs is just a 
+          variable name here we can use whatever name we want as the function argument.</p>
+
+        <p>Since the kwargs are a dictionary we have to use values method to get all the values on the dictionary. 
+          If we didn’t use the values method in kwargs it will iterate through the dictionary keys, here python will 
+          throw an error since the dictionary keys are string and we can’t multiply strings in Python.</p>
+
+        <img src="./images/code_5.jpeg"/>
+
+        <p>If we want both keys and values in the for loop then we can iterate through kwargs.items as shown below:</p>
+
+        <img src="./images/code_6.jpeg"/>
+
+        <h3 class="heading">Ordering Arguments</h3>
+
+        <p>There is a certain order we need to keep while passing both positional and keyword arguments to a function,</p>
+
+        <ol>
+          <li>Standard arguments</li>
+          <li>Positional arguments(*args)</li>
+          <li>Keyword arguments(**kwargs)</li>
+        </ol>
+
+        <img src="./images/code_7.jpeg"/>
+
+        <p>Here the function correct_order got executed without any error because we are following the correct ordering 
+          of arguments, but in the second function, incorrect_order python thrown an error because **kwargs is used 
+          before *args.</p>
+
+        <h3 class="heading">Summary</h3>
+
+        <ol>
+          <li>*args and **kwargs are very handy while passing a variable number of arguments to a function.</li>
+          <li>*args are used to pass positional arguments.</li>
+          <li>**kwargs are used to pass keyword arguments</li>
+          <li>While passing different types of arguments the order should be Standard arguments, Positional arguments(*args), and Keyword arguments(**kwargs).</li>
+        </ol>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>

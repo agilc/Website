@@ -48,6 +48,12 @@
   font-size: 21px;
 }
 
+.blog-content-wrapper li{
+  line-height: 32px;
+  letter-spacing: -0.003em;
+  font-size: 21px;
+}
+
 .blog-content-wrapper h3 {
   font-size: 30px;
   line-height: 36px;
