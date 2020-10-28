@@ -26,10 +26,35 @@
 }
 
 .blog-content-wrapper {
-  padding: 80px;
+  padding: 80px 25rem;
+  height: 100vh;
+  overflow: scroll;
+  width: 100%;
 }
 
 .blog-content-wrapper h1{
   width: 100%;
   color: #20c997;
+}
+
+.blog-content-wrapper img{
+  margin: 0 2.5rem;
+  width: 90%;
+}
+
+.blog-content-wrapper p{
+  line-height: 32px;
+  letter-spacing: -0.003em;
+  font-size: 21px;
+}
+
+.blog-content-wrapper h3 {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.blog-content-wrapper h5 {
+  font-weight: 700;
+  line-height: 32px;
+  font-size: 21px;
 }
