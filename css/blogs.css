@@ -9,6 +9,7 @@
 .blog-posts-list .blog-list-item .blog-title{
   font-size: large;
   color: #20c997;
+  cursor: pointer;
 }
 
 .blog-item-meta{
