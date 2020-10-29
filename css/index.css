@@ -65,8 +65,21 @@
   overflow: scroll;
 }
 
+.sidebar-wrapper .close-icon {
+  display: none;
+}
+
 @media screen and (max-width: 992px) {
   .sidebar-wrapper{
     display: none;
+  }
+
+  .sidebar-wrapper .close-icon {
+    position: absolute;
+    color: white;
+    left: 20rem;
+    top: 2rem;
+    font-size: large;
+    display: block;
   }
 }

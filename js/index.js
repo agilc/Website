@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         $('.sidebar-wrapper').toggle();
     });
 
-    $('#home').on("click", function(){
+    $('.sidebar-wrapper .close-icon').on("click", function(){
         $('.sidebar-wrapper').hide();
     });
 
