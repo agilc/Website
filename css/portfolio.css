@@ -1,3 +1,7 @@
+.portfolio-wrapper {
+  background-color: #f8f9fa!important;
+}
+
 .portfolio-contents {
   display: flex;
   justify-content: space-between;

@@ -1,0 +1,28 @@
+.contact-wrapper .contact-item {
+  display: flex;
+  flex-direction: column;
+  font-size: large;
+  margin: 10rem;
+  cursor: pointer;
+}
+
+.contact-wrapper .contact-item i{
+  color: #20c997;
+  margin-right: 10px;
+}
+
+.contact-items-wrapper{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.contact-wrapper .contact-item .social {
+  /* background-color: #20c997; */
+  /* color: white; */
+  padding: 1px 10px;
+  border-radius: 2px;
+  margin-bottom: 5px;
+  /* width: 170px;
+  text-align: center; */
+}
