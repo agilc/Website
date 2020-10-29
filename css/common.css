@@ -37,3 +37,17 @@ section{
   min-height: 100vh;
   padding: 80px;
 }
+
+@keyframes fadeInText {
+  to {
+    transform: translateY(30px);
+    opacity: 0;
+  } from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.fadein-infinite {
+  animation: fadeInText 2000ms infinite;
+}
