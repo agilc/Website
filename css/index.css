@@ -56,11 +56,17 @@
 }
 
 .sidebar-wrapper .nav-link-icons .social-icons:hover{
-  color: #333333;
+  color: #20c997;
 }
 
 .main-content-wrapper {
   width: 100%;
   height: 100vh;
   overflow: scroll;
+}
+
+@media screen and (max-width: 992px) {
+  .sidebar-wrapper{
+    display: none;
+  }
 }

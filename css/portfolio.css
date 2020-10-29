@@ -53,3 +53,14 @@
   font-weight: 400;
   line-height: 1.8;
 }
+
+@media screen and (max-width: 992px) {
+  .portfolio-contents .portfolio-item{
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .portfolio-contents{
+    display: block;
+  }
+}

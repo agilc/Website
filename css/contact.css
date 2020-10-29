@@ -26,3 +26,13 @@
   /* width: 170px;
   text-align: center; */
 }
+
+@media screen and (max-width: 992px) {
+  .contact-items-wrapper{
+    flex-direction: column;
+  }
+
+  .contact-wrapper .contact-item{
+    margin: 2rem 0;
+  }
+}

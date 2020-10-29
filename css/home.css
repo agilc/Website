@@ -25,3 +25,36 @@
   font-weight: 500;
   font-size: 2rem;
 }
+
+.home-wrapper .scroll-down-arrow{
+  position: absolute;
+  bottom: 40px;
+  line-height: 32px;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.left-more-icon {
+  display: none;
+}
+
+
+@media screen and (max-width: 992px) {
+  .home-wrapper .running-text {
+    font-size: 2.5rem;
+  }
+
+  section {
+    padding: 0;
+  }
+
+  .left-more-icon {
+    position: absolute;
+    color: white;
+    left: 2rem;
+    top: 2rem;
+    font-size: large;
+    display: block;
+  }
+}
