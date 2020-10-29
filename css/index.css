@@ -43,7 +43,6 @@
 .sidebar-wrapper .nav-link-icons{
   position: absolute;
   bottom: 2rem;
-  width: inherit;
   min-width: 225px;
 }
 

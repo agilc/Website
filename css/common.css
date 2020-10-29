@@ -16,10 +16,21 @@
   display: flex;
   font-weight: 600;
   font-size: xx-large;
+  position: relative;
+  align-items: center;
+}
+
+.section-headding h1{
+  color: #dee3e4;
+  opacity: 0.4;
+  font-weight: 600;
+  font-size: 8.25rem;
+  text-transform: uppercase;
 }
 
 .section-headding span{
   border-bottom: 3px solid #20c997;
+  position: absolute;
 }
 
 section{
