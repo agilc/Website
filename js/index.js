@@ -21,8 +21,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
         elmnt.scrollIntoView({ behavior: 'smooth', block: 'center' });
     });
 
-    $('.left-more-icon').on("click", function(){
+    $('.left-more-icon').on("click", function(e){
         $('.sidebar-wrapper').toggle();
+        e.stopPropagation();
+    });
+
+    $('.nav-links span').on("click", function(){
+        $('.sidebar-wrapper').toggle();
+    });
+
+    $('#home').on("click", function(){
+        $('.sidebar-wrapper').hide();
     });
 
 })
