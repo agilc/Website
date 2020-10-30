@@ -71,3 +71,9 @@
   border-left: 3px solid #525252;
   padding-left: 20px;
 }
+
+@media screen and (max-width: 992px) {
+  .blog-content-wrapper {
+    padding: 40px;
+  }
+}
