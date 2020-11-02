@@ -22,12 +22,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });
 
     $('.left-more-icon').on("click", function(e){
-        $('.sidebar-wrapper').toggle();
+        $('.sidebar-wrapper').show();
+        $('.sidebar-wrapper').removeClass("mobile-hide");
         e.stopPropagation();
     });
 
     $('.nav-links span').on("click", function(){
-        $('.sidebar-wrapper').toggle();
+        $('.sidebar-wrapper').addClass("mobile-hide");
     });
 
     $('.sidebar-wrapper .close-icon').on("click", function(){
