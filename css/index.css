@@ -69,6 +69,10 @@
   display: none;
 }
 
+.main-content-wrapper .LI-badge-container{
+  width: 100% !important;
+}
+
 @media screen and (max-width: 992px) {
   .sidebar-wrapper{
     display: none;
