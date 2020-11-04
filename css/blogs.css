@@ -77,3 +77,8 @@
     padding: 40px;
   }
 }
+
+.blog-content-wrapper .LI-badge-container{
+  width: 100% !important;
+  margin-top: 10%;
+}
