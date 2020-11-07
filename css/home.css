@@ -18,6 +18,16 @@
   font-weight: 600;
   font-size: 5rem;
   color: #20c997;
+  margin-bottom: 2rem;
+}
+
+.home-wrapper .running-text span{
+  /* margin-bottom: 1rem;
+  align-items: center;
+  background-color: #545454; */
+  /* box-shadow: 0px 0px 0px 0 rgba(0, 0, 0, 0.25), 0px 0px 20px 0 rgba(255, 255, 255, 0.3); */
+  /* border-radius: 50px;
+  padding: 1rem 2rem; */
 }
 
 .home-wrapper .place-text{
@@ -58,3 +68,7 @@
     display: block;
   }
 }
+
+/* .Typewriter__cursor {
+  display: none;
+} */
